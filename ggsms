@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة البحث</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .search-container {
+            text-align: center;
+        }
+
+        #search-input {
+            padding: 10px;
+            font-size: 9px;
+            border: px solid #ccc;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        #search-button {
+            padding: 5"px 10px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #search-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="ابحث هنا...">
+        <button id="search-button" onclick="performSearch()">ابحث</button>
+    </div>
+
+    <div id="search-results">
+        <!-- نتائج البحث ستظهر هنا -->
+    </div>
+
+    <script>
+        function performSearch() {
+            var searchTerm = document.getElementById("search-input").value;
+            var searchUrl = "https://temp-number.com/temporary-numbers/Netherlands/31970105395" + searchTerm;
+            window.open(searchUrl, "_blank");
+        }
+    </script>
+
+</body>
+</html>
